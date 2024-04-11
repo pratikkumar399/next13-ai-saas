@@ -9,7 +9,7 @@ import { useProModal } from "@/hooks/use-pro-modal";
 
 export const FreeCounter = ({
   isPro = false,
-  apiLimitCount = 0,
+  apiLimitCount = 10,
 }: {
   isPro: boolean,
   apiLimitCount: number

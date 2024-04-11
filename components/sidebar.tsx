@@ -9,7 +9,6 @@ import {
   LayoutDashboard,
   MessageSquare,
   Music,
-  Settings,
   VideoIcon,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -55,17 +54,12 @@ const routes = [
     icon: Code,
     color: "text-green-700",
     href: "/code",
-  },
-  {
-    label: "Settings",
-    icon: Settings,
-    href: "/settings",
-  },
+  }
 ];
 
 export const Sidebar = ({
-  apiLimitCount = 0,
-  isPro = false,
+  apiLimitCount = 10,
+  isPro = true,
 }: {
   apiLimitCount: number;
   isPro: boolean;
